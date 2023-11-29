@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 40px 0 60px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border: 5px;
+    font-size: 18px;
+    color: #3d3b3b;
+
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: rgb(40, 199, 40);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border: 5px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #3d3b3b;
+    margin-left: 15px;
+}
+
+.search-results {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result {
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.search-result img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+.search-result:hover img{
+    opacity: 0.8;
+}
+.search-result a{
+    font-size: 20xp;
+    text-decoration: none;
+    display: block;
+    color:#3d3b3b;
+    padding:10px;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+#show-more-button{
+/*     justify-content: center; */
+    text-align: center;
+    border:none;
+    font-size:18px;
+    padding:7px 15px;
+    color:#3d3b3b;
+    background-color: #008cba;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    display: block;
+    cursor:pointer;
+    border:5px;
+    margin:30px auto;
+    display:none;
+}
